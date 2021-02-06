@@ -52,7 +52,7 @@
         })
         function getTemperature() {
             const locationName = document.getElementById('location-input').value;
-            fetch(`http://api.openweathermap.org/data/2.5/weather?q=${locationName}&units=metric&appid=5e171ad564b3866164f6c237727948ef`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${locationName}&units=metric&appid=5e171ad564b3866164f6c237727948ef`)
                 .then(res => res.json())
                 .then(data => {
                     const weatherType = data.weather[0].main;
